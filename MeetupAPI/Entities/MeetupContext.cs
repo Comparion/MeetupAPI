@@ -10,7 +10,7 @@ namespace MeetupAPI.Entities
 {
     public class MeetupContext : DbContext
     {
-        private string _connectionString = "Server=(localdv)\\mssqllocaldb;Database=MeetupDb;Trusted_Connection=True;";
+        private string _connectionString = "Server=DESKTOP-R9L11VT\\SQLEXPRESS;Database=MeetupDb;Trusted_Connection=True;";
         public DbSet<Meetup> Meetups { get; set; }
         public DbSet<Location> Locations { get; set; }
         public DbSet<Lecture> Lectures { get; set; }
