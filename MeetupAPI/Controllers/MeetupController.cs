@@ -21,8 +21,8 @@ namespace MeetupAPI.Controllers
         public ActionResult<List<Meetup>> Get()
         {
             var meetups = _meetupContext.Meetups.ToList();
-
-            return meetups;
+            
+            return Ok(meetups);
         }
     }
 }
